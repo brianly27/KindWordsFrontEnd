@@ -55,16 +55,17 @@ class LetterCollection extends Component {
 
   return (
     <>
-      <div className='ui card'>
+      <div className='card row'>
         <div className='content'>
           <Read letter={letter} isWrite={true} />
         </div>
       </div>
-      <div>
-        <Button onClick={() => handleBack()} className='ui button'>
+
+      <div className='card row'>
+        <Button onClick={back} className='ui button left floated'>
           <i className='left arrow icon'></i>
         </Button>
-        <Button onClick={() => handleForward()} className='ui button'>
+        <Button onClick={forward} className='ui button right floated'>
           <i className='right arrow icon'></i>
         </Button>
       </div>
