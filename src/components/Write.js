@@ -69,6 +69,7 @@ class Write extends Component {
               <div className='ui form'>
                 <div className='field'>
                   <textarea
+                    id='writetext'
                     rows='10'
                     maxLength='200'
                     onChange={this.handleTextChange}
@@ -86,22 +87,22 @@ class Write extends Component {
               </span>
             </div>
           </div>
-          <>
+          <div>
             <Button
               onClick={
                 isRead ? this.handleSubmitResponse : this.handleSubmitLetter
               }
-              className='ui right floated button'
+              className='ui right floated button primary'
             >
               Send
             </Button>
             <Button
               onClick={() => setDesk()}
-              className='ui right floated button'
+              className='ui right floated button secondary'
             >
               Close
             </Button>
-          </>
+          </div>
         </div>
       </>
     )

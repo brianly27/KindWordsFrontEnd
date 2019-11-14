@@ -62,12 +62,14 @@ class LetterCollection extends Component {
       </div>
 
       <div className='card row'>
-        <Button onClick={back} className='ui button left floated'>
-          <i className='left arrow icon'></i>
-        </Button>
-        <Button onClick={forward} className='ui button right floated'>
-          <i className='right arrow icon'></i>
-        </Button>
+        <div>
+          <Button onClick={forward} className='ui button primary right floated'>
+            <i className='right arrow icon'></i>
+          </Button>
+          <Button onClick={back} className='ui button secondary right floated'>
+            <i className='left arrow icon'></i>
+          </Button>
+        </div>
       </div>
     </>
   )
